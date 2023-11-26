@@ -38,7 +38,7 @@ const HomePage = () => {
             )}
             <section>
                 <h1>Trending today</h1>
-                <MovieList trendingMovies={trendingMovies} />
+                <MovieList movies={trendingMovies} />
             </section>
         </main>
     );
