@@ -52,7 +52,7 @@ const MovieDetails = () => {
                 </div>
             )}
             <div className={CSS.DeteilsContainer}>
-                {movieData.poster_path && (
+                 {movieData && (
                     <MovieDetailsItem
                         id={movieData.id}
                         poster_path={movieData.poster_path}

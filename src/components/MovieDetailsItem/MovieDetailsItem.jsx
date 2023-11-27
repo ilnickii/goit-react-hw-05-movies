@@ -1,6 +1,6 @@
 import React from 'react';
 const movieImageUrl = 'https://image.tmdb.org/t/p/w300';
-const defaultImg = 'https://ireland.apollo.olxcdn.com/v1/files/0iq0gb9ppip8-UA/image;s=1000x700';
+const defaultImg = 'https://ireland.apollo.olxcdn.com/v1/files/0iq0gb9ppip8-UA/image;s=200x200';
 
 const MovieDetailsItem = ({ poster_path, title, overview, genres }) => {
   const imageUrl = poster_path ? `${movieImageUrl}${poster_path}` : defaultImg;
@@ -11,6 +11,7 @@ const MovieDetailsItem = ({ poster_path, title, overview, genres }) => {
         <img
           src={imageUrl}
           alt={`Poster for ${title}`}
+          loading="lazy"
         />
       </div>
       <div>
